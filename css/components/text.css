@@ -3,6 +3,7 @@
   font-weight: 500;
   color: var(--white);
   font-size: 0.765rem;
+  text-decoration: none;
 }
 
 .menu-item {
@@ -131,7 +132,7 @@
 
 @media screen and (max-width: 500px) {
   .t-main {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 }
 

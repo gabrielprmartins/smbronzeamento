@@ -3,10 +3,11 @@
 }
 
 .btn-mobile {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: none;
-  background: var(--pink);
+  background: url('../../assets/icons/menu.svg') var(--light-pink) center center no-repeat;
+  border: 1px solid transparent;
   text-indent: -10000px;
   cursor: pointer;
   border-radius: 50%;
@@ -14,10 +15,10 @@
   overflow: hidden;
   display: none;
 }
-/* 
+
 .btn-mobile:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-} */
+  border-color: var(--pink);
+}
 
 @media screen and (max-width: 800px) {
   .btn-mobile {

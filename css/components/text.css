@@ -1,0 +1,141 @@
+.list-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 0.765rem;
+}
+
+.menu-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--black);
+  padding: 15px 20px;
+}
+
+.menu-item:hover {
+  color: var(--pink);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Lobster Two', cursive;
+  line-height: 1.2;
+}
+
+.t-main {
+  font-size: 5.4rem;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+}
+
+.emphasis {
+  color: var(--pink);
+}
+
+.paragraph {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.p-main {
+  max-width: 65ch;
+  margin: 30px auto 0;
+}
+
+.btn-link {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--pink);
+  text-decoration: underline;
+  margin-top: 20px;
+  align-self: flex-end;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.btn-link:hover {
+  transform: translate3d(10px, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+  .t-main {
+    font-size: 4rem;
+  }
+}
+
+.t-price {
+  font-size: 2rem;
+}
+
+.t-price-item {
+  font-size: 1.5rem;
+  color: var(--pink);
+  margin-bottom: 10px;
+}
+
+.prices-list ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.800rem;
+  display: grid;
+  grid-template-columns: 8px auto;
+  align-items: start;
+}
+
+.price-tag {
+  margin-top: 20px;
+  background: var(--green);
+  align-self: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.footer-items ul li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  max-width: 200px;
+}
+
+.footer-items ul li a {
+  color: var(--black);
+}
+
+.footer-items ul li + li {
+  margin-top: 8px;
+}
+
+.copy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.975rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .t-results {
+    font-size: 2rem;
+  }
+  .paragraph {
+    font-size: 0.875rem;
+  }
+  .btn-link {
+    font-size: 1rem;
+  }
+  .t-main {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .t-main {
+    font-size: 2.5rem;
+  }
+}
+
+/* 
+font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+*/

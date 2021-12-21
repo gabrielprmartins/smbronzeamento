@@ -1,0 +1,63 @@
+:root {
+  --header-height: 150px;
+}
+
+.btn-mobile {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--pink);
+  text-indent: -10000px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s;
+  overflow: hidden;
+  display: none;
+}
+/* 
+.btn-mobile:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+} */
+
+@media screen and (max-width: 800px) {
+  .btn-mobile {
+    display: block;
+  }
+  .menu ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: var(--header-height);
+    right: 0;
+    background: var(--light-pink);
+    z-index: 999;
+    transition: all 0.3s;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+    box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+  .menu.active ul {
+    top: 100px;
+  }
+  .menu li, .menu li a {
+    padding: 20px;
+  }
+  .menu ul.active {
+    height: 260px;
+    visibility: visible;
+  }
+  .menu.active ul.active {
+    height: 171px;
+    visibility: visible; 
+  }
+  .btn-mobile.active {
+    transform: rotate(-90deg);
+  }
+}
+
+@media screen and (max-width: 613px) {
+  :root {
+    --header-height: 160px;
+  }
+}

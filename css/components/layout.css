@@ -1,0 +1,219 @@
+.main {
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.main-text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.results {
+  margin: 120px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.t-results {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.photo-1 {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: -80px;
+}
+
+.photo-2 {
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+.bl-results {
+  margin-top: 40px;
+  align-self: center;
+}
+
+.bl-results:hover {
+  transform: translate3d(0, -10px, 0);
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    margin: 30px auto;
+  }
+  .main-text {
+    max-width: 500px;
+  }
+  .results {
+    margin: 30px auto;
+    max-width: 500px;
+  }
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .photo-1 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .results {
+    padding: 20px;
+  }
+  .photo-4 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .results-grid img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .results-grid img {
+    max-width: 160px;
+  }
+  .t-results {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
+  .photo-4 {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .results-grid img {
+    max-width: 130px;
+  }
+}
+
+/* Prices */
+.prices {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+  align-items: start;
+  padding: 20px;
+}
+
+.prices-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices-title img {
+  margin-top: 30px;
+  background: var(--light-pink);
+  padding: 25px 40px;
+  border-radius: 50px;
+}
+
+.prices-list {
+  background: var(--light-pink);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+.prices-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prices-list ul li + li {
+  margin-top: 8px;
+}
+
+.prices-list ul li:before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: var(--pink);
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 900px) {
+  .prices-title img {
+    display: none;
+  }
+  .prices {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .prices-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .prices-list ul {
+    display: grid;
+    justify-content: center;
+  }
+  .price-tag {
+    justify-self: center;
+  }
+}
+
+/* Instagram */
+.instagram {
+  margin: 120px auto;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.instagram-container p {
+  max-width: 440px;
+  margin: 20px 0 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .instagram {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .instagram-container {
+    flex-direction: column-reverse;
+  }
+  .instagram-container figure {
+    margin-top: 30px;
+  }
+  .instagram-container figure img {
+    max-width: 280px;
+  }
+}

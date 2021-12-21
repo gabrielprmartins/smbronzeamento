@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--light-pink);
+  padding: 40px 20px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFD9EF;
+}
+
+.t-footer {
+  font-size: 1.7rem;
+  color: var(--pink);
+}
+
+.footer-items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.t-footer-item {
+  font-size: 1.5rem;
+  color: var(--pink);
+  margin-bottom: 15px;
+}
+
+.btn-footer {
+  text-decoration: underline;
+}
+

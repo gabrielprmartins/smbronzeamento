@@ -24,6 +24,11 @@
   line-height: 1.2;
 }
 
+.e-effect {
+  background: url('../../assets/icons/effect.svg') bottom center no-repeat;
+  padding-bottom: 20px;
+}
+
 .t-main {
   font-size: 5.4rem;
   font-family: 'Lobster Two', cursive;

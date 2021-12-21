@@ -7,17 +7,12 @@
   height: 40px;
   border: none;
   background: url('../../assets/icons/menu.svg') var(--light-pink) center center no-repeat;
-  border: 1px solid transparent;
   text-indent: -10000px;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.4s;
   overflow: hidden;
   display: none;
-}
-
-.btn-mobile:hover {
-  border-color: var(--pink);
 }
 
 @media screen and (max-width: 800px) {

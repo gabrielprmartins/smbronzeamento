@@ -83,7 +83,7 @@
 
 .prices-list ul li {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.800rem;
+  font-size: 0.8rem;
   display: grid;
   grid-template-columns: 8px auto;
   align-items: start;
@@ -139,6 +139,11 @@
   .t-main {
     font-size: 2.8rem;
   }
+}
+
+.t-location-address {
+  color: var(--pink);
+  margin-bottom: 20px;
 }
 
 /* 

@@ -6,7 +6,8 @@
   width: 40px;
   height: 40px;
   border: none;
-  background: url('../../assets/icons/menu.svg') var(--light-pink) center center no-repeat;
+  background: url('../../assets/icons/menu.svg') var(--light-pink) center center
+    no-repeat;
   text-indent: -10000px;
   cursor: pointer;
   border-radius: 50%;
@@ -15,7 +16,7 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .btn-mobile {
     display: block;
   }
@@ -36,19 +37,20 @@
   .menu.active ul {
     top: 100px;
   }
-  .menu li, .menu li a {
-    padding: 20px;
-  }
   .menu ul.active {
     height: 260px;
     visibility: visible;
   }
   .menu.active ul.active {
     height: 171px;
-    visibility: visible; 
+    visibility: visible;
   }
   .btn-mobile.active {
     transform: rotate(-90deg);
+  }
+  .btn-menu {
+    margin-left: 20px;
+    text-align: left;
   }
 }
 

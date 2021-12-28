@@ -123,30 +123,48 @@
   border-radius: 50px;
 }
 
-.prices-list {
+.flex-prices-list {
   background: var(--light-pink);
-  padding: 30px;
   border-radius: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 15px;
+}
+
+.prices-list {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, auto));
+  gap: 20px;
 }
 
 .prices-list ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-content: start;
+  justify-content: center;
+  position: relative;
 }
 
-.prices-list ul + ul {
-  margin-top: 30px;
+.price-tag {
+  justify-self: center;
+  margin-top: 20px;
 }
 
 .prices-list ul li + li {
   margin-top: 8px;
 }
+
+.prices-list ul + ul:before {
+  content: '';
+  background: #ffd9ef;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+}
+
+/* .prices-list ul + ul {
+  padding-left: 20px;
+  margin-left: 20px;
+} */
 
 .prices-list ul li:before {
   content: '';
@@ -159,26 +177,18 @@
   margin-top: 6px;
 }
 
+.flex-prices-list {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 @media screen and (max-width: 900px) {
   .prices-title img {
     display: none;
   }
   .prices {
     grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .prices-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .prices-list ul {
-    display: grid;
-    justify-content: center;
-  }
-  .price-tag {
-    justify-self: center;
   }
 }
 

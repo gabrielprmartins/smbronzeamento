@@ -11,9 +11,8 @@ const getTopFromElement = (event) => {
   const element = event.currentTarget;
   const id = element.getAttribute('href');
   const to = document.querySelector(id).offsetTop;
-  const menuHeight = getMenuHeight();
-  return to - menuHeight;
-}
+  return to;
+};
 
 const scrollToPosition = (to) => {
   smoothScrollTo(0, to);
@@ -46,8 +45,9 @@ function smoothScrollTo(endX, endY, duration) {
 
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
-    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    if ((time /= duration / 2) < 1)
+      return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
   };
 
   const timer = setInterval(() => {
@@ -100,9 +100,13 @@ const scrollActive = () => {
     const sectionId = section.getAttribute('id');
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(`.menu li a[href*=${sectionId}]`).classList.add(activeClass);
+      document
+        .querySelector(`.menu li a[href*=${sectionId}]`)
+        .classList.add(activeClass);
     } else {
-      document.querySelector(`.menu li a[href*=${sectionId}]`).classList.remove(activeClass);
+      document
+        .querySelector(`.menu li a[href*=${sectionId}]`)
+        .classList.remove(activeClass);
     }
   });
 };

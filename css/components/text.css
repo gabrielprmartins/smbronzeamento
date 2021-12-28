@@ -90,7 +90,6 @@
 }
 
 .price-tag {
-  margin-top: 20px;
   background: var(--green);
   align-self: center;
   padding: 10px;

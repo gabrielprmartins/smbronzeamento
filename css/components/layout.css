@@ -161,11 +161,6 @@
   left: -10px;
 }
 
-/* .prices-list ul + ul {
-  padding-left: 20px;
-  margin-left: 20px;
-} */
-
 .prices-list ul li:before {
   content: '';
   display: inline-block;
@@ -181,6 +176,21 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media screen and (max-width: 1000px) {
+  .prices {
+    position: relative;
+  }
+  .prices::after {
+    content: 'Arraste para ver mais →';
+    position: absolute;
+    bottom: -15px;
+    right: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    color: var(--pink);
+  }
 }
 
 @media screen and (max-width: 900px) {

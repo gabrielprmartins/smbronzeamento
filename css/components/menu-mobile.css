@@ -38,7 +38,7 @@
     top: 100px;
   }
   .menu ul.active {
-    height: 260px;
+    height: 236px;
     visibility: visible;
   }
   .menu.active ul.active {
@@ -49,8 +49,8 @@
     transform: rotate(-90deg);
   }
   .btn-menu {
-    margin-left: 20px;
-    text-align: left;
+    border-radius: 0;
+    /* text-align: left; */
   }
 }
 
